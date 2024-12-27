@@ -117,6 +117,7 @@
   content: "\e91d";
 }
 
+/* form validation */
 .input-control.error input,
 .input-control.error textarea {
   border-color: red;
@@ -130,4 +131,15 @@
 .error {
   color: red;
   font-size: 0.875rem;
+}
+
+/* card buttons */
+.swiper-slide .collection-name {
+  opacity: 0; /* Hide everything inside .collection-name */
+  transition: opacity 0.3s ease; /* Smooth transition for showing */
+}
+
+/* Show buttons and text when hovering over the swiper-slide */
+.swiper-slide:hover .collection-name {
+  opacity: 1; /* Show content inside .collection-name on hover */
 }
